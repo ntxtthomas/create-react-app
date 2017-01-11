@@ -1,0 +1,28 @@
+A component must always have a render method
+
+Export defualt;
+only one defualt allowed per file
+
+
+<Hello/> is JSX
+
+Looksl like XML
+
+Has self closing tag
+
+MAKE IT DYNAMIC
+Pass in data where the component is rendered
+
+.props that passes properties through the component
+represents tdate the will the the same on every render
+
+.state reps data that will change depending on actions of the user
+
+values stored in a components state are utable
+we can access state values using this.state.
+
+=> = anonymous function
+
+
+
+
