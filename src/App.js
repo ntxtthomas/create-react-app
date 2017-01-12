@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-// local variables
+// local variables.. but the file for this file is import './App.css'; (see above)  
 const buttonStyle = {
   marginRight: 16,
 };
@@ -44,14 +44,16 @@ class Hello extends Component {
       counter: this.state.counter + 10,
     });
   }
-
+  handleCountbyHundred(){
+    this.state({
+      counter: this.state.counter + 100,
+    });
+  }
   handleChangeName(event){
     this.setState({
       newName: event.target.value,
     });
   }
-
-
 
   // the Component will render this
   render() {
@@ -68,17 +70,11 @@ class Hello extends Component {
           <p>You are {this.props.age} years old</p>
           <p>Counter is -> {this.state.counter}</p>
           
-          <button style={buttonStyle} onClick={(event) => this.handleClick(event)}>
-          Click Me!
-          </button>
-
-          <button style={buttonStyle} onClick={(event) => this.handleResetCounter(event)}>
-          Reset!
-          </button>
-
-          <button style={buttonStyle} onClick={(event) => this.handleCountbyTen(event)}>
-          Increment by Ten!
-          </button>
+          <button style={buttonStyle} onClick={(event) => this.handleClick(event)}>Add One!</button>
+          <button style={buttonStyle} onClick={(event) => this.handleCountbyTen(event)}>Add Ten!</button>
+          <button style={buttonStyle} onClick={(event) => this.handleCountbyHundred(event)}>Add 100!</button>
+          <button style={buttonStyle} onClick={(event) => this.handleResetCounter(event)}>Reset!</button>
+          <p>Not {this.props.name}? Change name here:</p>
           <input type="text" onChange={(event) => this.handleChangeName(event)} />
 
 

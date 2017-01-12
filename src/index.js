@@ -4,6 +4,6 @@ import Hello from './App';
 import './index.css';
 
 ReactDOM.render(
-  <Hello age={28} name={"Donovan"} />,
+  <Hello age={30} name={"John Doe"} />,
   document.getElementById('root')
 );

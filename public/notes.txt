@@ -9,7 +9,7 @@ only one defualt allowed per file
 Looksl like XML
 
 Has self closing tag
-
+i
 MAKE IT DYNAMIC
 Pass in data where the component is rendered
 
